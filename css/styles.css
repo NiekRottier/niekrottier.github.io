@@ -27,7 +27,7 @@ h1{
 h2{
     text-align: center;
     font-size: 5rem;
-    margin: 40px 0 20px 0;
+    margin: 20px 0 20px 0;
 
     background: linear-gradient(120deg, #00C2FF, #F3FCFF);
     background-clip: text;
@@ -43,6 +43,12 @@ h2{
     color: white;
 }
 
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
 a{
     text-align: center;
     font-size: 1.5rem;
@@ -53,6 +59,18 @@ a{
 a:hover{
     color: rgb(202, 202, 202);
     text-decoration: underline;
+}
+
+.githubLink{
+    font-size: 1rem;
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 250px;
 }
 
 @media only screen and (max-width: 920px) {
