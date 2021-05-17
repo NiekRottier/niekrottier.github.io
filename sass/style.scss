@@ -68,7 +68,7 @@ p, div{
             margin-right: 10px;
             justify-self: center;
 
-            background-color: rgba(#FFFFFF, 0.6);
+            background-color: rgba(#979797, 0.6); 
         }
 
         a{
@@ -83,6 +83,12 @@ p, div{
             color: #FFFFFF;
             text-decoration: none;
 
+        }
+        // Change the bg-color of the active circle
+        &.active{
+            ::before{
+                background-color: rgba(#FFFFFF, 0.6);
+            }
         }
     }
 }
