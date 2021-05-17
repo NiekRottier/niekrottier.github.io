@@ -1,5 +1,5 @@
-# niekrottier.github.io
+# Portfolio
 
-Personal GitHub page
+Niek's portfolio
 
 See it [HERE](https://niekrottier.github.io/)
