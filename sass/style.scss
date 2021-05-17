@@ -10,6 +10,7 @@
 
 html {
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -36,13 +37,45 @@ h2{
 
 #menu{
     position: fixed;
-    top: 45vh;
+    top: 40vh;
     z-index: 1;
 
     height: 150px;
+    list-style: none;
 
-    :hover{
-        cursor: pointer;
+    li{
+        margin: 10px 0;
+        
+        :hover{
+            cursor: pointer;
+        }
+
+        // Add the circle
+        ::before{
+            content: "";
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            justify-self: center;
+
+            background-color: rgba(#FFFFFF, 0.6);
+        }
+
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+
+            color: #FFFFFF;
+            text-decoration: none;
+
+        }
     }
 }
 
