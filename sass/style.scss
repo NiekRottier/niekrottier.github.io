@@ -318,3 +318,20 @@ p, div{
         }
     }
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding-bottom: 60px;
+
+    small{
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+}
