@@ -36,15 +36,16 @@ h2 {
   color: #F9F9F9;
 }
 
-h3 {
+h3, input[type=button] {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 48px;
   color: #F4F4F4;
+  text-align: center;
 }
 
-p, div {
+p, div, input[type=text], textarea {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -52,11 +53,35 @@ p, div {
   color: #FFFFFF;
 }
 
+small {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3, input[type=button] {
+    font-size: 24px !important;
+  }
+
+  p, div, input[type=text], textarea {
+    font-size: 18px;
+  }
+}
 #menu {
   position: fixed;
   top: 40vh;
   z-index: 1;
-  height: 150px;
   list-style: none;
 }
 #menu li {
@@ -93,6 +118,15 @@ p, div {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1050px) {
+  #menu {
+    top: 0;
+    padding-left: 20px;
+  }
+  #menu li {
+    margin: 5px 0;
+  }
+}
 #header {
   display: flex;
   flex-direction: column;
@@ -108,6 +142,15 @@ p, div {
   margin-right: 10vw;
 }
 
+@media only screen and (max-width: 1050px) {
+  #header h1, #header h2 {
+    text-align: center;
+  }
+  #header h2 {
+    align-self: center;
+    margin: 0;
+  }
+}
 #aboutMe {
   display: flex;
   flex-direction: row;
@@ -129,7 +172,6 @@ p, div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 700px;
   width: 600px;
   margin-right: 5vw;
   padding: 40px 40px;
@@ -137,6 +179,22 @@ p, div {
   border-radius: 20px;
 }
 
+@media only screen and (max-width: 1050px) {
+  #aboutMe {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
+  }
+  #aboutMe #profilePic {
+    margin: 0 0 30px 0;
+    width: 60vw;
+    height: 60vw;
+  }
+  #aboutMe .textArea {
+    margin: 0 0 30px 0;
+    width: 80vw;
+  }
+}
 #projects {
   display: flex;
   flex-direction: column;
@@ -210,11 +268,21 @@ p, div {
   background-image: url("../assets/images/backend-api.png");
 }
 
+@media only screen and (max-width: 1050px) {
+  .project {
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .project .banner p {
+    text-align: center;
+    font-size: 30px !important;
+  }
+}
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 60px 100px 60px;
+  padding: 50px 10vw 100px 10vw;
   width: 100%;
 }
 #contact h2 {
@@ -239,6 +307,7 @@ p, div {
 }
 #contact #contactForm form label {
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 #contact #contactForm form input, #contact #contactForm form textArea {
   width: 100%;
@@ -246,19 +315,11 @@ p, div {
   border-radius: 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  color: #FFFFFF;
 }
 #contact #contactForm form input[type=button], #contact #contactForm form textArea[type=button] {
   height: 70px;
   margin-top: 40px;
   background-color: rgba(0, 255, 240, 0.8);
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  color: #F4F4F4;
 }
 #contact #contactForm form input[type=button]:hover, #contact #contactForm form textArea[type=button]:hover {
   cursor: pointer;
@@ -271,19 +332,22 @@ p, div {
   resize: vertical;
 }
 
+@media only screen and (max-width: 1050px) {
+  #contactForm {
+    width: 100% !important;
+    padding: 10px 15px;
+  }
+  #contactForm input[type=button] {
+    height: 50px !important;
+    margin-top: 30px !important;
+  }
+}
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding-bottom: 60px;
-}
-footer small {
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
