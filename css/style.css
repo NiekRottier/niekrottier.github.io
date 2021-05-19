@@ -30,6 +30,14 @@ h2 {
   color: #F9F9F9;
 }
 
+h3 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #F4F4F4;
+}
+
 p, div {
   margin: 0;
   font-family: "Quicksand", sans-serif;
@@ -128,6 +136,7 @@ p, div {
   flex-direction: column;
   align-items: center;
   padding: 50px 60px 100px 60px;
+  width: 100%;
 }
 #projects h2 {
   margin-bottom: 50px;
@@ -193,6 +202,67 @@ p, div {
 }
 #projects #projectContainer .project#backendApi {
   background-image: url("../assets/images/backend-api.png");
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 60px 100px 60px;
+  width: 100%;
+}
+#contact h2 {
+  margin-bottom: 50px;
+}
+#contact #contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#contact #contactForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#contact #contactForm form label {
+  margin-top: 10px;
+}
+#contact #contactForm form input, #contact #contactForm form textArea {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#contact #contactForm form input[type=button], #contact #contactForm form textArea[type=button] {
+  height: 70px;
+  margin-top: 40px;
+  background-color: rgba(0, 255, 240, 0.8);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #F4F4F4;
+}
+#contact #contactForm form input[type=button]:hover, #contact #contactForm form textArea[type=button]:hover {
+  cursor: pointer;
+  background-color: #00ffee98;
+}
+#contact #contactForm form textArea {
+  min-height: 100px;
+  max-height: 800px;
+  height: 200px;
+  resize: vertical;
 }
 
 /*# sourceMappingURL=style.css.map */
