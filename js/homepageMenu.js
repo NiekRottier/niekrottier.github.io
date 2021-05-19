@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 // All menu items
 let menuItem1 = document.getElementById("menuItem1")
 let menuItem2 = document.getElementById("menuItem2")
