@@ -13,6 +13,25 @@ function handleSubmit(){
         "message": messageField
     }
 
+    if (isValid(fields)) {
+        updateButton()
+    }
+}
+
+// Change button style and content
+function updateButton() {
+    submitBtn.value = "Message sent!"
+    submitBtn.classList.add("messageSent")
+    submitBtn.removeEventListener("click", handleSubmit)
+    setInterval(() => {
+        submitBtn.value = "Send message"
+        submitBtn.classList.remove("messageSent")
+        submitBtn.addEventListener("click", handleSubmit)
+    }, 1000)
+}
+
+// Do validation checks
+function isValid(fields){
     // If valid is true change it to the return of fieldValidation(), if valid is false don't change it
     let valid = true;
     
@@ -21,7 +40,7 @@ function handleSubmit(){
     valid &= fieldValidation(fields.email, isEmail)
     valid &= fieldValidation(fields.message, isNotEmpty)
 
-    console.log(valid);
+    return valid
 }
 
 // Check if value isn't empty

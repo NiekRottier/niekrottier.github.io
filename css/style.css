@@ -342,15 +342,21 @@ small {
   border-radius: 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
+  transition: border 300ms;
 }
 #contact #contactForm form input[type=button], #contact #contactForm form textArea[type=button] {
   height: 70px;
   margin-top: 40px;
   background-color: rgba(0, 255, 240, 0.8);
+  transition: background-color 500ms;
 }
 #contact #contactForm form input[type=button]:hover, #contact #contactForm form textArea[type=button]:hover {
   cursor: pointer;
   background-color: #00ffee98;
+}
+#contact #contactForm form input[type=button].messageSent, #contact #contactForm form textArea[type=button].messageSent {
+  background-color: rgba(0, 255, 179, 0.8);
+  cursor: default;
 }
 #contact #contactForm form input.error, #contact #contactForm form textArea.error {
   border: solid red 2px;

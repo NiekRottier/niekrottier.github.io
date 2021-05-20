@@ -404,6 +404,8 @@ small{
                 border-radius: 20px;
                 border: none;
                 background-color: rgba(#FFFFFF, 0.6);
+                
+                transition: border 300ms;
 
                 // Button
                 &[type="button"]{
@@ -411,9 +413,16 @@ small{
                     margin-top: 40px;
                     background-color: rgba(#00FFF0, 0.8);
 
+                    transition: background-color 500ms;
+
                     &:hover{
                         cursor: pointer;
                         background-color: #00ffee98;
+                    }
+
+                    &.messageSent{
+                        background-color: rgba(#00ffb3, 0.8);
+                        cursor: default;
                     }
                 }
 
