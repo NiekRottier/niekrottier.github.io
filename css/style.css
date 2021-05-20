@@ -187,6 +187,7 @@ small {
 }
 #aboutMe #visualsContainer #socials *:hover {
   color: #eeeeee;
+  cursor: pointer;
 }
 #aboutMe .textArea {
   display: flex;
@@ -338,7 +339,7 @@ small {
 #contact #contactFormContainer #contactForm input, #contact #contactFormContainer #contactForm textArea {
   width: 100%;
   height: 50px;
-  padding: 0 10px;
+  padding: 5px 10px;
   border-radius: 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
@@ -376,6 +377,9 @@ small {
   #contactFormContainer {
     width: 100% !important;
     padding: 10px 15px;
+  }
+  #contactFormContainer input {
+    height: 40px !important;
   }
   #contactFormContainer input[type=button] {
     height: 50px !important;
