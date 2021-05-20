@@ -373,7 +373,7 @@ small{
         margin-bottom: 50px;
     }
 
-    #contactForm{
+    #contactFormContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -384,7 +384,7 @@ small{
         border-radius: 20px;
         background-color: rgba(#FFFFFF, 0.2);
 
-        form{
+        #contactForm{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -443,7 +443,7 @@ small{
 }
 
 @media only screen and (max-width: 1050px) {
-    #contactForm{
+    #contactFormContainer{
         width: 100% !important;
         padding: 10px 15px;
 

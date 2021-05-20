@@ -314,7 +314,7 @@ small {
 #contact h2 {
   margin-bottom: 50px;
 }
-#contact #contactForm {
+#contact #contactFormContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,18 +324,18 @@ small {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-#contact #contactForm form {
+#contact #contactFormContainer #contactForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
 }
-#contact #contactForm form label {
+#contact #contactFormContainer #contactForm label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-#contact #contactForm form input, #contact #contactForm form textArea {
+#contact #contactFormContainer #contactForm input, #contact #contactFormContainer #contactForm textArea {
   width: 100%;
   height: 50px;
   padding: 0 10px;
@@ -344,24 +344,24 @@ small {
   background-color: rgba(255, 255, 255, 0.6);
   transition: border 300ms;
 }
-#contact #contactForm form input[type=button], #contact #contactForm form textArea[type=button] {
+#contact #contactFormContainer #contactForm input[type=button], #contact #contactFormContainer #contactForm textArea[type=button] {
   height: 70px;
   margin-top: 40px;
   background-color: rgba(0, 255, 240, 0.8);
   transition: background-color 500ms;
 }
-#contact #contactForm form input[type=button]:hover, #contact #contactForm form textArea[type=button]:hover {
+#contact #contactFormContainer #contactForm input[type=button]:hover, #contact #contactFormContainer #contactForm textArea[type=button]:hover {
   cursor: pointer;
   background-color: #00ffee98;
 }
-#contact #contactForm form input[type=button].messageSent, #contact #contactForm form textArea[type=button].messageSent {
+#contact #contactFormContainer #contactForm input[type=button].messageSent, #contact #contactFormContainer #contactForm textArea[type=button].messageSent {
   background-color: rgba(0, 255, 179, 0.8);
   cursor: default;
 }
-#contact #contactForm form input.error, #contact #contactForm form textArea.error {
+#contact #contactFormContainer #contactForm input.error, #contact #contactFormContainer #contactForm textArea.error {
   border: solid red 2px;
 }
-#contact #contactForm form textArea {
+#contact #contactFormContainer #contactForm textArea {
   min-height: 100px;
   max-height: 800px;
   height: 200px;
@@ -369,11 +369,11 @@ small {
 }
 
 @media only screen and (max-width: 1050px) {
-  #contactForm {
+  #contactFormContainer {
     width: 100% !important;
     padding: 10px 15px;
   }
-  #contactForm input[type=button] {
+  #contactFormContainer input[type=button] {
     height: 50px !important;
     margin-top: 30px !important;
   }

@@ -10,6 +10,9 @@
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+
+    <!-- Email service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 <body>
     <ul id="menu">
@@ -95,14 +98,16 @@
 
     <div id="contact">
         <h2>Contact</h2>
-        <div id="contactForm">
+        <div id="contactFormContainer">
             <h3>Send me a message!</h3>
-            <form>
+            <form id="contactForm">
+                <input id="contactNumber" type="hidden" name="contact_number" value="0">
+
                 <label for="name">Your name</label>
-                <input id="name" type="text" name="name">
+                <input id="name" type="text" name="user_name">
 
                 <label for="email">Your email address</label>
-                <input id="email" type="email" name="email">
+                <input id="email" type="email" name="user_email">
 
                 <label for="message">Your message</label>
                 <textarea id="message" name="message"></textarea>

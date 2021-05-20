@@ -1,21 +1,35 @@
 // Get input values and submitbutton
 let submitBtn = document.getElementById("submit")
+let contactForm = document.getElementById("contactForm");
+let contactNumberField = document.getElementById("contactNumber")
 let nameField = document.getElementById("name")
 let emailField = document.getElementById("email")
 let messageField = document.getElementById("message")
 
 submitBtn.addEventListener("click", handleSubmit)
 
+contactNumberField.value = Math.random() * 100000 | 0
+
 function handleSubmit(){
     let fields = {
-        "name": nameField,
-        "email": emailField,
+        "contact_number": contactNumberField,
+        "user_name": nameField,
+        "user_email": emailField,
         "message": messageField
     }
 
     if (isValid(fields)) {
-        updateButton()
+        sendEmail(contactForm)
     }
+}
+
+function sendEmail(contactForm) {
+    // Send email using 'contact_service' as service, 'contact_form' as template and the "variables" from contactForm 
+    emailjs.sendForm('contact_service', 'contact_form', contactForm)
+        .then(
+            () => updateButton(), 
+            (error) => console.log(error)
+        )
 }
 
 // Change button style and content
@@ -35,9 +49,9 @@ function isValid(fields){
     // If valid is true change it to the return of fieldValidation(), if valid is false don't change it
     let valid = true;
     
-    valid &= fieldValidation(fields.name, isNotEmpty)
-    valid &= fieldValidation(fields.email, isNotEmpty)
-    valid &= fieldValidation(fields.email, isEmail)
+    valid &= fieldValidation(fields.user_name, isNotEmpty)
+    valid &= fieldValidation(fields.user_email, isNotEmpty)
+    valid &= fieldValidation(fields.user_email, isEmail)
     valid &= fieldValidation(fields.message, isNotEmpty)
 
     return valid
