@@ -8,21 +8,6 @@
 @import 'basics';
 @import 'menu';
 @import 'header';
-@import 'aboutMe';
-@import 'projects';
-@import 'contact';
+@import 'summary';
+@import 'gallery';
 @import 'footer';
-
-#header{
-    img{
-        mix-blend-mode: color-dodge;
-    }
-}
-
-input[type="text"], input[type="email"], textarea{
-    @extend p
-}
-
-input[type="button"]{
-    @extend h3
-}

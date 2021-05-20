@@ -61,6 +61,10 @@
                 }
             }
 
+            &:hover{
+                cursor: pointer;
+            }
+
             // Add images to project blocks
             &#jsAi{
                 background-image: url('../assets/images/js-ai.png');

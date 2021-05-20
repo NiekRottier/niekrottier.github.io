@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niek Rottier</title>
+    <link rel="stylesheet" href="css/projectPage.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/icon/TVfavicon.png"/>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+
+    <!-- Email service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li id="menuItem1"><a href="#header">Header</a></li>
+        <li id="menuItem2"><a href="#summary">Summary</a></li>
+        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+    </ul>
+
+    <div id="header">
+        <img src="./assets/images/projects/jsai/HeaderImg.png">
+        <h1>JS and AI</h1>
+        <h2>JavaScript, AI</h2>
+    </div>
+
+    <hr id="hrSummary"/>
+
+    <div id="summary">
+        <div class="textArea">
+            <h2>About</h2>
+            <p>This projects consists of 6 different Artifical Intelligence applications. <br> 
+                This project was a bit of an eye-opener to me. It showed me that a lot more was possible with the web than I thought. <br>
+                By working on it I learned about AI and Machine Learning and that it's often whacky (or maybe that's just me) <br>
+                I like the hand recognition app the most, because it gives you a look behind the tech, has interaction and just looks cool.
+            </p>
+        </div>
+        <div class="textArea">
+            <h2>Technology</h2>
+            <p>All the applications are coded in JavaScript. They use different algoritmes, like KNN, decisiontrees or Neural Networks. 
+                Some load pre-trained models, others train the models themself or have you train them. <br>
+                I used TensorFlow.js and ML5.js so I could use Machine Learning in the browser. <br>
+                <a href="https://github.com/NiekRottier/JSandAI" target="_blank">GitHub</a> - 
+                <a href="https://niekrottier.github.io/JSandAI/" target="_blank">Website</a>
+            </p>
+        </div>
+    </div>
+
+    <hr id="hrGallery"/>
+
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <div id="imageContainer">
+            <p id="exitImage" hidden>x</p>
+            <img src="./assets/images/projects/jsai/jsaiHome.png" alt="" class="image">
+            <img src="./assets/images/projects/jsai/jsaiHandRecognition.png" alt="" class="image">
+            <img src="./assets/images/projects/jsai/jsaiTree.png" alt="" class="image">
+            <img src="./assets/images/projects/jsai/jsaiNeuralNetwork.png" alt="" class="image">
+            <img src="./assets/images/projects/jsai/jsaiImageDetection.png" alt="" class="image">
+            <img src="./assets/images/projects/jsai/headerImg.png" alt="" class="image">
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy;2021 - Niek Rottier</small>
+    </footer>
+
+    <script src="js/projectMenu.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

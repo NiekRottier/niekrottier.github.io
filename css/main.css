@@ -1,5 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00FFF0), to(#282828));
+  background: linear-gradient(#00FFF0, #282828);
+}
+
+hr {
+  height: 2px;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 144px;
+  color: #FFFFFF;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+  color: #F9F9F9;
+}
+
+h3, input[type="button"] {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #F4F4F4;
+  text-align: center;
+}
+
+p, input[type="text"], input[type="email"], textarea, div {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+small {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3, input[type="button"] {
+    font-size: 24px !important;
+  }
+  p, input[type="text"], input[type="email"], textarea, div {
+    font-size: 18px;
+  }
+}
+
 #menu {
   position: fixed;
   top: 40vh;
@@ -81,12 +160,23 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: url("../assets/images/headerImg.png");
-  background-size: cover;
-  mix-blend-mode: color-dodge;
+}
+
+#header img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: darken;
+}
+
+#header h1 {
+  z-index: 1;
 }
 
 #header h2 {
+  z-index: 1;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 10vw;
@@ -283,7 +373,7 @@
   transition: height 300ms;
 }
 
-#projects #projectContainer .project .banner p {
+#projects #projectContainer .project .banner p, #projects #projectContainer .project .banner input[type="text"], #projects #projectContainer .project .banner input[type="email"], #projects #projectContainer .project .banner textarea {
   -webkit-transition: font-size 300ms;
   transition: font-size 300ms;
 }
@@ -300,12 +390,16 @@
   border-radius: 20px;
 }
 
-#projects #projectContainer .project:hover .banner p {
+#projects #projectContainer .project:hover .banner p, #projects #projectContainer .project:hover .banner input[type="text"], #projects #projectContainer .project:hover .banner input[type="email"], #projects #projectContainer .project:hover .banner textarea {
   font-size: 54px;
 }
 
 #projects #projectContainer .project:hover .banner small {
   font-size: 18px;
+}
+
+#projects #projectContainer .project:hover {
+  cursor: pointer;
 }
 
 #projects #projectContainer .project#jsAi {
@@ -337,7 +431,7 @@
     height: 300px !important;
     width: 300px !important;
   }
-  .project .banner p {
+  .project .banner p, .project .banner input[type="text"], .project .banner input[type="email"], .project .banner textarea {
     text-align: center;
     font-size: 30px !important;
   }
@@ -477,81 +571,7 @@ footer {
   padding-bottom: 60px;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  background-color: white;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00FFF0), to(#282828));
-  background: linear-gradient(#00FFF0, #282828);
-}
-
-hr {
-  height: 2px;
-  background-color: #FFFFFF;
-  border: none;
-}
-
-h1 {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-size: 144px;
-  color: #FFFFFF;
-}
-
-h2 {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-  font-size: 72px;
-  color: #F9F9F9;
-}
-
-h3, input[type="button"] {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  color: #F4F4F4;
-  text-align: center;
-}
-
-p, div, input[type="text"], input[type="email"], textarea {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  color: #FFFFFF;
-}
-
-small {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #FFFFFF;
-}
-
-@media only screen and (max-width: 1050px) {
-  h1 {
-    font-size: 72px;
-  }
-  h2 {
-    font-size: 36px;
-  }
-  h3, input[type="button"] {
-    font-size: 24px !important;
-  }
-  p, div, input[type="text"], input[type="email"], textarea {
-    font-size: 18px;
-  }
+#header img {
+  mix-blend-mode: color-dodge;
 }
 /*# sourceMappingURL=main.css.map */
