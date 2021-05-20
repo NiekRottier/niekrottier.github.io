@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niek Rottier</title>
+    <link rel="stylesheet" href="css/projectPage.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/icon/TVfavicon.png"/>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+
+    <!-- Email service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li id="menuItem1"><a href="#header">Header</a></li>
+        <li id="menuItem2"><a href="#summary">Summary</a></li>
+        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+    </ul>
+
+    <div id="backButton">Home</div>
+
+    <div id="header">
+        <img src="./assets/images/projects/laravelGallery/headerImg.png">
+        <h1>Laravel Gallery</h1>
+        <h2>Laravel, MVC, MySQL</h2>
+    </div>
+
+    <hr id="hrSummary"/>
+
+    <div id="summary">
+        <div class="textArea">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt iusto molestias deleniti error soluta suscipit labore sint odit inventore, 
+                doloribus neque quam maiores nemo magnam non explicabo quasi odio fugit!
+            </p>
+        </div>
+        <div class="textArea">
+            <h2>Technology</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt iusto molestias deleniti error soluta suscipit labore sint odit inventore, 
+                doloribus neque quam maiores nemo magnam non explicabo quasi odio fugit!<br>
+                <a href="https://github.com/NiekRottier/Laravel-gallery" target="_blank">GitHub</a> - 
+                <a href="" target="_blank">Website</a>
+            </p>
+        </div>
+    </div>
+
+    <hr id="hrGallery"/>
+
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <div id="imageContainer">
+            <p id="exitImage" hidden>x</p>
+            <img src="./assets/images/projects/laravelGallery/headerImg.png" alt="Screenshot of the application" class="image">
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy;2021 - Niek Rottier</small>
+    </footer>
+
+    <script src="js/projectMenu.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/backButton.js"></script>
+</body>
+</html>

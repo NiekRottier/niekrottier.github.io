@@ -1,3 +1,13 @@
 let jsai = document.getElementById("jsAi")
+let projectPigeon = document.getElementById("projectPigeon")
+let reactNotes = document.getElementById("reactNotes")
+let laravelGallery = document.getElementById("laravelGallery")
+let nieuwsRadar = document.getElementById("nieuwsRadar")
+let backendApi = document.getElementById("backendApi")
 
 jsai.addEventListener("click", () => window.location.href ="./jsai.html")
+projectPigeon.addEventListener("click", () => window.location.href ="./projectPigeon.html")
+reactNotes.addEventListener("click", () => window.location.href ="./reactNotes.html")
+laravelGallery.addEventListener("click", () => window.location.href ="./laravelGallery.html")
+nieuwsRadar.addEventListener("click", () => window.location.href ="./nieuwsradar.html")
+backendApi.addEventListener("click", () => window.location.href ="./backendApi.html")
