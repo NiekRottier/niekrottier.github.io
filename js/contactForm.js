@@ -26,8 +26,8 @@ function handleSubmit(){
 }
 
 function sendEmail(contactForm) {
-    // Send email using 'contact_service' as service, 'contact_form' as template and the "variables" from contactForm 
-    emailjs.sendForm('contact_service', 'contact_form', contactForm)
+    // Send email using 'contact_service' as service, 'contact_form' as template and the "variables" from contactForm and my userID
+    emailjs.sendForm('contact_service', 'contact_form', contactForm, "user_YpjSJRDtPcAxvHCBAnrqG")
         .then(
             () => updateButtonMsgSend(), 
             (error) => {
