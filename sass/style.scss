@@ -51,7 +51,7 @@ h3, input[type="button"]{
     text-align: center;
 }
 
-p, div, input[type="text"], textarea{
+p, div, input[type="text"], input[type="email"], textarea{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -80,7 +80,7 @@ small{
         font-size: 24px !important;
     }
 
-    p, div, input[type="text"], textarea{
+    p, div, input[type="text"], input[type="email"], textarea{
         font-size: 18px;
     }
 }
@@ -400,6 +400,7 @@ small{
             input, textArea{
                 width: 100%;
                 height: 50px;
+                padding: 0 10px;
                 border-radius: 20px;
                 border: none;
                 background-color: rgba(#FFFFFF, 0.6);
@@ -414,6 +415,10 @@ small{
                         cursor: pointer;
                         background-color: #00ffee98;
                     }
+                }
+
+                &.error{
+                    border: solid red 2px;
                 }
             }
 

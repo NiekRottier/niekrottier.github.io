@@ -45,7 +45,7 @@ h3, input[type=button] {
   text-align: center;
 }
 
-p, div, input[type=text], textarea {
+p, div, input[type=text], input[type=email], textarea {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -74,7 +74,7 @@ small {
     font-size: 24px !important;
   }
 
-  p, div, input[type=text], textarea {
+  p, div, input[type=text], input[type=email], textarea {
     font-size: 18px;
   }
 }
@@ -338,6 +338,7 @@ small {
 #contact #contactForm form input, #contact #contactForm form textArea {
   width: 100%;
   height: 50px;
+  padding: 0 10px;
   border-radius: 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
@@ -350,6 +351,9 @@ small {
 #contact #contactForm form input[type=button]:hover, #contact #contactForm form textArea[type=button]:hover {
   cursor: pointer;
   background-color: #00ffee98;
+}
+#contact #contactForm form input.error, #contact #contactForm form textArea.error {
+  border: solid red 2px;
 }
 #contact #contactForm form textArea {
   min-height: 100px;
