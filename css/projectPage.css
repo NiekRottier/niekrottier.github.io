@@ -294,6 +294,8 @@ small {
   -o-object-fit: scale-down;
      object-fit: scale-down;
   background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 0;
   cursor: default;
 }
 
