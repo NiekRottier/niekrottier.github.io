@@ -400,7 +400,7 @@ small{
             input, textArea{
                 width: 100%;
                 height: 50px;
-                padding: 0 10px;
+                padding: 5px 10px;
                 border-radius: 20px;
                 border: none;
                 background-color: rgba(#FFFFFF, 0.6);
@@ -451,6 +451,10 @@ small{
     #contactFormContainer{
         width: 100% !important;
         padding: 10px 15px;
+
+        input{
+            height: 40px !important;
+        }
 
         input[type="button"]{
             height: 50px !important;
