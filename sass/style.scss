@@ -413,7 +413,7 @@ small{
                     margin-top: 40px;
                     background-color: rgba(#00FFF0, 0.8);
 
-                    transition: background-color 500ms;
+                    transition: background-color 300ms;
 
                     &:hover{
                         cursor: pointer;
@@ -422,6 +422,11 @@ small{
 
                     &.messageSent{
                         background-color: rgba(#00ffb3, 0.8);
+                        cursor: default;
+                    }
+                    
+                    &.messageFailed{
+                        background-color: rgba(#f8acff, 0.8);
                         cursor: default;
                     }
                 }

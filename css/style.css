@@ -348,7 +348,7 @@ small {
   height: 70px;
   margin-top: 40px;
   background-color: rgba(0, 255, 240, 0.8);
-  transition: background-color 500ms;
+  transition: background-color 300ms;
 }
 #contact #contactFormContainer #contactForm input[type=button]:hover, #contact #contactFormContainer #contactForm textArea[type=button]:hover {
   cursor: pointer;
@@ -356,6 +356,10 @@ small {
 }
 #contact #contactFormContainer #contactForm input[type=button].messageSent, #contact #contactFormContainer #contactForm textArea[type=button].messageSent {
   background-color: rgba(0, 255, 179, 0.8);
+  cursor: default;
+}
+#contact #contactFormContainer #contactForm input[type=button].messageFailed, #contact #contactFormContainer #contactForm textArea[type=button].messageFailed {
+  background-color: rgba(248, 172, 255, 0.8);
   cursor: default;
 }
 #contact #contactFormContainer #contactForm input.error, #contact #contactFormContainer #contactForm textArea.error {

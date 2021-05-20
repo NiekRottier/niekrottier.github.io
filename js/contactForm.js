@@ -20,6 +20,8 @@ function handleSubmit(){
 
     if (isValid(fields)) {
         sendEmail(contactForm)
+    } else {
+        updateButtonMsgFailed()
     }
 }
 
@@ -27,20 +29,37 @@ function sendEmail(contactForm) {
     // Send email using 'contact_service' as service, 'contact_form' as template and the "variables" from contactForm 
     emailjs.sendForm('contact_service', 'contact_form', contactForm)
         .then(
-            () => updateButton(), 
-            (error) => console.log(error)
+            () => updateButtonMsgSend(), 
+            (error) => {
+                console.log(error)
+                updateButtonMsgFailed()
+            }
         )
 }
 
 // Change button style and content
-function updateButton() {
+function updateButtonMsgSend() {
     submitBtn.value = "Message sent!"
     submitBtn.classList.add("messageSent")
     submitBtn.removeEventListener("click", handleSubmit)
-    setInterval(() => {
+    let changeBack = setInterval(() => {
         submitBtn.value = "Send message"
         submitBtn.classList.remove("messageSent")
         submitBtn.addEventListener("click", handleSubmit)
+        clearInterval(changeBack)
+    }, 1000)
+    clearInterval()
+}
+
+function updateButtonMsgFailed() {
+    submitBtn.value = "Message failed"
+    submitBtn.classList.add("messageFailed")
+    submitBtn.removeEventListener("click", handleSubmit)
+    let changeBack = setInterval(() => {
+        submitBtn.value = "Send message"
+        submitBtn.classList.remove("messageFailed")
+        submitBtn.addEventListener("click", handleSubmit)
+        clearInterval(changeBack)
     }, 1000)
 }
 
