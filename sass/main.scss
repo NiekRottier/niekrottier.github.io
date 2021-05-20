@@ -1,0 +1,94 @@
+// Run 'sass --watch sass/style.scss css/style.css' or use Live Sass Compiler to compile
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+// Import other files
+@import 'menu';
+@import 'header';
+@import 'aboutMe';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+
+    background: linear-gradient( #00FFF0, #282828);
+}
+
+hr{
+    height: 2px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 144px;
+    color: #FFFFFF;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 72px;
+    color: #F9F9F9;
+}
+
+h3, input[type="button"]{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #F4F4F4;
+    
+    text-align: center;
+}
+
+p, div, input[type="text"], input[type="email"], textarea{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+small{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1050px) {
+    h1{
+        font-size: 72px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    h3, input[type="button"]{
+        font-size: 24px !important;
+    }
+
+    p, div, input[type="text"], input[type="email"], textarea{
+        font-size: 18px;
+    }
+}

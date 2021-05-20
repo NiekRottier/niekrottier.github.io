@@ -1,0 +1,83 @@
+#aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px 100px 60px;
+
+    #visualsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #profilePic{
+            height: 400px;
+            width: 400px;
+            margin-bottom: 30px;
+
+            border-radius: 50%;
+            border: solid 1px #FFFFFF;
+            background-color: white;
+            background-image: url('../assets/images/profilePic.jpg');
+            background-size: cover;
+        } 
+
+        #socials{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            *{
+                color: #FFFFFF;
+                font-size: 75px;
+                margin: 0 10px;
+
+                &:hover{
+                    color: #eeeeee;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 600px;
+        padding: 40px 40px;
+        margin-left: 60px;
+
+        background-color: rgba(#FFFFFF, 0.2);
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #aboutMe{
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+        #visualsContainer{
+            #profilePic{
+                max-height: 400px;
+                max-width: 400px;
+                width: 60vw;
+                height: 60vw;
+            }
+        }
+
+        .textArea{
+            margin: 0 0 30px 0;
+            width: 80vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #socials *{
+        font-size: 50px !important;
+    }
+}
