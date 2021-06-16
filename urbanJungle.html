@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Jungle</title>
+    <link rel="stylesheet" href="css/projectPage.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/icon/TVfavicon.png"/>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+
+    <!-- Email service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li id="menuItem1"><a href="#header">Header</a></li>
+        <li id="menuItem2"><a href="#summary">Summary</a></li>
+        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+    </ul>
+
+    <div id="backButton">Home</div>
+
+    <div id="header">
+        <img src="./assets/images/projects/urbanJungle/headerImg.png">
+        <h1>Urban Jungle</h1>
+        <h2>React, Three.js</h2>
+    </div>
+
+    <hr id="hrSummary"/>
+
+    <div id="summary">
+        <div class="textArea">
+            <h2>About</h2>
+            <p>This application is the result of a 16 week project with the goal to make a positive impact on sustainability in Rotterdam. <br>
+                Urban Jungle tries to make its impact by making users reflect on and confront their current sustainability 
+                and providing help to improve it. <br>
+                The endresult gives the user a quiz based on the object they scan.
+                After the quiz the user sees a 3D model of Rotterdam adjusted to their sustainability.
+                The app provides tips to help the user improve their sustainability. <br>
+            </p>
+        </div>
+        <div class="textArea">
+            <h2>My work</h2>
+            <p>I worked on development of the quiz, 3D viewer and styling. <br>
+                Besides development I worked on the concept, set up a usability test and made a rapport of it and did research. 
+                I also worked on other project related stuff, like the Business Model Canvas, Empathy Map, Persona, Customer Journey and more. 
+            </p>
+        </div>
+        <div class="textArea">
+            <h2>Technology</h2>
+            <p>We worked with React and Ionic to make the app a PWA. This means it can be build as a webapp and a native app. <br>
+                I used Three.js, initially to use AR, but also to load the 3D models.
+                The models are made using Blender and the object detection uses TenserFlow.js and the model Coco SSD. 
+                These were used by other teammates. <br>
+                <a href="https://github.com/D-Abdi/urban-jungle" target="_blank">GitHub</a> - 
+                <a href="https://project.cmi.hro.nl/2020_2021/cmgt_tle34_t3" target="_blank">Application</a>
+            </p>
+        </div>
+    </div>
+
+    <hr id="hrGallery"/>
+
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <div id="imageContainer">
+            <p id="exitImage" hidden>x</p>
+            <img src="./assets/images/projects/urbanJungle/mobile-homescreen.png" alt="Homescreen of the Urban Jungle app" class="image">
+            <img src="./assets/images/projects/urbanJungle/mobile-objectrecognition.png" alt="Object recognition scanning a stuffed animal" class="image">
+            <img src="./assets/images/projects/urbanJungle/mobile-quiz.png" alt="A quiz with questions about sustainability" class="image">
+            <img src="./assets/images/projects/urbanJungle/mobile-3dviewer.png" alt="An 3D viewer showing a model of a city" class="image">
+            <img src="./assets/images/projects/urbanJungle/mobile-tips.png" alt="Sustainability tips provided by the app" class="image">
+        </div>
+    </div>
+
+    <footer>
+        <small>&copy;2021 - Niek Rottier</small>
+    </footer>
+
+    <script src="js/projectMenu.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/backButton.js"></script>
+</body>
+</html>

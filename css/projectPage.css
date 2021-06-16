@@ -272,6 +272,11 @@ a:hover {
   margin-bottom: 20px;
 }
 
+#summary .textArea h3 {
+  margin: 20px 0;
+  text-align: left;
+}
+
 #gallery {
   display: -webkit-box;
   display: -ms-flexbox;
