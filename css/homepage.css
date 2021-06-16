@@ -414,6 +414,10 @@ a:hover {
   cursor: pointer;
 }
 
+#projects #projectContainer .project#urbanJungle {
+  background-image: url("../assets/images/urbanJungle.png");
+}
+
 #projects #projectContainer .project#jsAi {
   background-image: url("../assets/images/js-ai.png");
 }
