@@ -62,6 +62,14 @@ small{
     color: #FFFFFF;
 }
 
+a{
+    color: rgb(115, 215, 255);
+
+    &:hover{
+        color: rgb(40, 194, 255);
+    }
+}
+
 @media only screen and (max-width: 1050px) {
     h1{
         font-size: 72px;

@@ -64,6 +64,14 @@ small {
   color: #FFFFFF;
 }
 
+a {
+  color: #73d7ff;
+}
+
+a:hover {
+  color: #28c2ff;
+}
+
 @media only screen and (max-width: 1050px) {
   h1 {
     font-size: 72px;
