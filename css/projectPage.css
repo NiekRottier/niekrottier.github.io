@@ -348,6 +348,10 @@ a:hover {
   margin: 0;
   font-size: 72px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 footer {
