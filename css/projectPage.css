@@ -309,7 +309,7 @@ a:hover {
           justify-content: center;
 }
 
-#gallery #imageContainer img {
+#gallery #imageContainer img, #gallery #imageContainer iframe {
   height: 300px;
   width: 300px;
   margin: 10px;
@@ -319,11 +319,11 @@ a:hover {
   cursor: pointer;
 }
 
-#gallery #imageContainer img:hover {
+#gallery #imageContainer img:hover, #gallery #imageContainer iframe:hover {
   border: 2px solid #FFFFFF;
 }
 
-#gallery #imageContainer img.activeImage {
+#gallery #imageContainer img.activeImage, #gallery #imageContainer iframe.activeImage {
   position: fixed;
   top: 0;
   left: 0;
