@@ -87,6 +87,25 @@ a:hover {
   }
 }
 
+#languagePicker {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  z-index: 1;
+}
+
+#languagePicker small {
+  display: inline;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#languagePicker small:hover {
+  cursor: pointer;
+}
+
 #menu {
   position: fixed;
   top: 40vh;

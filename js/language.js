@@ -18,14 +18,14 @@ function updateLanguage(lang) {
 
     console.log(`lang = ${lang}`);
 
-    document.getElementById('about-title').textContent = language[lang].index["about-title"]
-    document.getElementById('about-1').textContent = language[lang].index["about-1"]
-    document.getElementById('about-2').textContent = language[lang].index["about-2"]
-    document.getElementById('contact-title').textContent = language[lang].index["contact-title"]
-    document.getElementById('contact-name').textContent = language[lang].index["contact-name"]
-    document.getElementById('contact-email').textContent = language[lang].index["contact-email"]
-    document.getElementById('contact-msg').textContent = language[lang].index["contact-msg"]
-    document.getElementById('submit').value = language[lang].index["submit"]
+    document.getElementById('about-title').textContent = language[lang].index['about-title']
+    document.getElementById('about-1').textContent = language[lang].index['about-1']
+    document.getElementById('about-2').textContent = language[lang].index['about-2']
+    document.getElementById('contact-title').textContent = language[lang].index['contact-title']
+    document.getElementById('contact-name').textContent = language[lang].index['contact-name']
+    document.getElementById('contact-email').textContent = language[lang].index['contact-email']
+    document.getElementById('contact-msg').textContent = language[lang].index['contact-msg']
+    document.getElementById('submit').value = language[lang].index['submit']
 }
 
 // Translations 

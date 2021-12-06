@@ -1,0 +1,15 @@
+#languagePicker{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 1;
+
+    small {
+        display: inline;
+        user-select: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
