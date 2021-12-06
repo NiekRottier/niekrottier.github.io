@@ -287,6 +287,12 @@ a:hover {
   border-radius: 20px;
 }
 
+#summary .textArea a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 #summary .textArea h2 {
   margin-bottom: 20px;
 }
