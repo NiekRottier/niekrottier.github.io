@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Jungle</title>
+    <title>Niek Rottier</title>
     <link rel="stylesheet" href="css/projectPage.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/icon/TVfavicon.png"/>
 
@@ -13,9 +13,9 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
@@ -53,7 +53,7 @@
         </div>
         <div class="textArea">
             <h2 id="tech-title">Technology</h2>
-            <p tech-1>We used React and Ionic to make a Progressive Web App. This means it can be build as a webapp and a native app.
+            <p id="tech-1">We used React and Ionic to make a Progressive Web App. This means it can be build as a webapp and a native app.
                 I worked with Three.js to load the 3D models.
                 The models were made in Blender and the object detection uses TenserFlow.js and the model Coco SSD.
             </p>
@@ -65,7 +65,7 @@
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/urbanJungle/mobile-homescreen.png" alt="Homescreen of the Urban Jungle app" class="image">
