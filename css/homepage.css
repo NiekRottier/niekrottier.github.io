@@ -104,6 +104,12 @@ a:hover {
 
 #languagePicker small:hover {
   cursor: pointer;
+  color: #F9F9F9;
+  text-decoration: underline;
+}
+
+#languagePicker small:active {
+  color: #F1F1F1;
 }
 
 #menu {
