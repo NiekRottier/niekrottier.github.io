@@ -13,12 +13,16 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
+
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
 
     <div id="header">
         <img src="./assets/images/projects/reactNotes/headerImg.png">
@@ -30,26 +34,25 @@
 
     <div id="summary">
         <div class="textArea">
-            <h2>About</h2>
-            <p>With this webapplication you can create, read, update and delete notes. <br>
-                Since it was my first time using React I styled it so the different modules are very distinctive. <br>
-                Learning React wasn't as hard as I expected. <br>
-                Once I got the hang of it I liked it.
+            <h2 id="about-title">About</h2>
+            <p id="about-1">With this webapplication you can create, read, update and delete notes.
+                Since it was my first time using React I styled it so the different modules are very distinctive.
+                Learning React wasn't as hard as I expected and once I got the hang of it I liked using it.
             </p>
         </div>
         <div class="textArea">
-            <h2>Technology</h2>
-            <p>This application is made using React.js. 
-                I used an API made by a teacher, because my own <a href="./backendApi.html">backend API</a> wasn't finished yet. <br>
-                <a href="https://github.com/NiekRottier/React-Notes-API" target="_blank">GitHub</a>
+            <h2 id="tech-title">Technology</h2>
+            <p id="tech-1">This application is made using React.js. 
+                I used an API made by a teacher, because my own backend API wasn't finished yet.
             </p>
+            <a href="https://github.com/NiekRottier/React-Notes-API" target="_blank">GitHub</a>
         </div>
     </div>
 
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/reactNotes/headerImg.png" alt="Screenshot of the application" class="image">
@@ -64,5 +67,6 @@
     <script src="js/projectMenu.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/backButton.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

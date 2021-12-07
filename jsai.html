@@ -13,13 +13,17 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
 
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
+    
     <div id="header">
         <img src="./assets/images/projects/jsai/headerImg.png">
         <h1>JS and AI</h1>
@@ -30,28 +34,29 @@
 
     <div id="summary">
         <div class="textArea">
-            <h2>About</h2>
-            <p>This projects consists of 6 different Artifical Intelligence applications. <br> 
-                This project was a bit of an eye-opener to me. It showed me that a lot more was possible with the web than I thought. <br>
-                By working on it I learned about AI and Machine Learning and that it's often whacky (or maybe that's just me) <br>
-                I like the hand recognition app the most, because it gives you a look behind the tech, has interaction and just looks cool.
+            <h2 id="about-title">About</h2>
+            <p id="about-1">This project consists of 6 different Artifical Intelligence applications.
+                Working on this was a bit of an eye-opener for me. It showed me that the web has a lot more possibilities than I thought.
+                I learned about AI and Machine Learning and that it's often whacky (or maybe that was just me).
+                Of all the apps in this project I like the hand recognition app the most, because it gives you a look behind the tech, has interaction and just looks kinda cool.
             </p>
         </div>
         <div class="textArea">
-            <h2>Technology</h2>
-            <p>All the applications are coded in JavaScript. They use different algoritmes, like KNN, decisiontrees or Neural Networks. 
-                Some load pre-trained models, others train the models themself or have you train them. <br>
-                I used TensorFlow.js and ML5.js so I could use Machine Learning in the browser. <br>
-                <a href="https://github.com/NiekRottier/JSandAI" target="_blank">GitHub</a> - 
-                <a href="https://niekrottier.github.io/JSandAI/" target="_blank">Website</a>
+            <h2 id="tech-title">Technology</h2>
+            <p id="tech-1">All the applications are coded in JavaScript. They use different algoritmes, like KNN, decisiontrees and Neural Networks.
+                I used TensorFlow.js and ML5.js to use Machine Learning in the browser.
+                Some apps load pre-trained models, others have to be trained by the user or train themself on startup.
             </p>
+            <a href="https://github.com/NiekRottier/JSandAI" target="_blank">GitHub</a> 
+            <a href="https://niekrottier.github.io/JSandAI/" target="_blank">Website</a>
+            
         </div>
     </div>
 
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/jsai/jsaiHome.png" alt="Homepage of JS and AI" class="image">
@@ -70,5 +75,6 @@
     <script src="js/projectMenu.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/backButton.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

@@ -16,11 +16,15 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Home</a></li>
-        <li id="menuItem2"><a href="#aboutMe">About me</a></li>
-        <li id="menuItem3"><a href="#projects">Projects</a></li>
-        <li id="menuItem4"><a href="#contact">Contact</a></li>
+        <li id="menuItem1"><a id="link-home" href="#header">Home</a></li>
+        <li id="menuItem2"><a id="link-aboutMe" href="#aboutMe">About me</a></li>
+        <li id="menuItem3"><a id="link-projects" href="#projects">Projects</a></li>
+        <li id="menuItem4"><a id="link-contact" href="#contact">Contact</a></li>
     </ul>
+
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
 
     <div id="header">
         <img src="./assets/images/headerImg.png">
@@ -42,18 +46,18 @@
 
         </div>
         <div class="textArea">
-            <h2>About me</h2>
-            <p>Hi! I’m Niek, a 18 y/o Creative Media & Game Tech student at Hogeschool Rotterdam. 
-            <br /><br /> 
-            I like to design and develop the front-end of websites and applications and want to specialize in this.<br />
-            My goal is to give the users the easiest and smoothest experience they’ve ever had.</p>
+            <h2 id="about-title">About me</h2>
+            <p id="about-1">Hi! I’m Niek, a 19 y/o Creative Media & Game Tech student at Hogeschool Rotterdam.</p>
+            <br>
+            <p id="about-2">I like to design and develop the front-end of websites.
+            My goal is to give users the easiest and smoothest experience they’ve ever had.</p>
         </div>
     </div>
 
     <hr id="hrProjects"/>
 
     <div id="projects">
-        <h2>Projects</h2>
+        <h2 id="projects-title">Projects</h2>
         <div id="projectContainer">
             <div id="urbanJungle" class="project">
                 <div class="banner">
@@ -106,17 +110,17 @@
     <div id="contact">
         <h2>Contact</h2>
         <div id="contactFormContainer">
-            <h3>Send me a message!</h3>
+            <h3 id="contact-title">Send me a message!</h3>
             <form id="contactForm">
                 <input id="contactNumber" type="hidden" name="contact_number" value="0">
 
-                <label for="name">Your name</label>
+                <label for="name" id="contact-name">Your name</label>
                 <input id="name" type="text" name="user_name">
 
-                <label for="email">Your email address</label>
+                <label for="email" id="contact-email">Your email address</label>
                 <input id="email" type="email" name="user_email">
 
-                <label for="message">Your message</label>
+                <label for="message" id="contact-msg">Your message</label>
                 <textarea id="message" name="message"></textarea>
 
                 <input id="submit" type="button" value="Send message">
@@ -132,5 +136,6 @@
     <script src="js/socialLinks.js"></script>
     <script src="js/contactForm.js"></script>
     <script src="js/projectLinks.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

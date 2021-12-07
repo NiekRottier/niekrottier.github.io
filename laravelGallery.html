@@ -13,12 +13,16 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
+
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
 
     <div id="header">
         <img src="./assets/images/projects/laravelGallery/headerImg.png">
@@ -30,26 +34,26 @@
 
     <div id="summary">
         <div class="textArea">
-            <h2>About</h2>
-            <p>With this web application you can login and look at and post pictures with a title, description and tag. <br>
-                Other functions include liking pictures, hiding, editing and deleting your own pictures, and searching based on the title or tag. <br>
+            <h2 id="about-title">About</h2>
+            <p id="about-1">With this web application you can login and look at and post pictures with a title, description and tag.
+                Other functions include liking pictures, hiding, editing and deleting your own pictures, and searching based on the title or tag.
                 At the moment there are 5 tags, but this could be expanded.
             </p>
         </div>
         <div class="textArea">
-            <h2>Technology</h2>
-            <p>The Laravel Gallery is, as the name suggests, build with the PHP framework Laravel. <br>
-                Laravel works with the MVC pattern, so this application also makes use of this. <br>
-                The application has a MySQL database.<br>
-                <a href="https://github.com/NiekRottier/Laravel-gallery" target="_blank">GitHub</a>
+            <h2 id="tech-title">Technology</h2>
+            <p id="tech-1">The Laravel Gallery is, as the name suggests, build with the PHP framework Laravel.
+                Laravel works with the MVC pattern, so this application also makes use of this.
+                The application has a MySQL database.
             </p>
+            <a href="https://github.com/NiekRottier/Laravel-gallery" target="_blank">GitHub</a>
         </div>
     </div>
 
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/laravelGallery/headerImg.png" alt="Homescreen" class="image"> 
@@ -67,5 +71,6 @@
     <script src="js/projectMenu.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/backButton.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

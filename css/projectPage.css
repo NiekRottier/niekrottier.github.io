@@ -87,6 +87,31 @@ a:hover {
   }
 }
 
+#languagePicker {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  z-index: 1;
+}
+
+#languagePicker small {
+  display: inline;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#languagePicker small:hover {
+  cursor: pointer;
+  color: #F9F9F9;
+  text-decoration: underline;
+}
+
+#languagePicker small:active {
+  color: #F1F1F1;
+}
+
 #menu {
   position: fixed;
   top: 40vh;
@@ -266,6 +291,12 @@ a:hover {
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+}
+
+#summary .textArea a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #summary .textArea h2 {

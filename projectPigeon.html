@@ -13,12 +13,16 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
+
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
 
     <div id="header">
         <img src="./assets/images/projects/projectPigeon/headerImg.png">
@@ -30,34 +34,35 @@
 
     <div id="summary">
         <div class="textArea">
-            <h2>About</h2>
-            <p>Project: Pigeon is a rogue-like webgame where you play as a professor who needs to capture and cure pigeons. <br>
-                There are 3 levels and 2 bossfights. The game gets harder as it goes on. <br>
-                It is based on 3 keywords: Narrative, explore and pigeons. <br>
-                The narrative aspect of the game could've gotten a bit more love, but the pigeons are definitely there. <br>
-                The game was made in a 7 week period by a team of 5 students.
+            <h2 id="about-title">About</h2>
+            <p id="about-1">Project: Pigeon is a rogue-like webgame where you play as a professor who needs to capture and cure mutated pigeons.
+                There are 3 levels and 2 bossfights. The game gets harder as it goes on. 
+            </p>
+            <p id="about-2">It is based on 3 keywords: 'narrative', 'explore' and 'pigeons'.
+                The narrative aspect of the game could've gotten a bit more love, but the pigeons are definitely there.
+            </p>
+            <p id="about-3">The game was made in a 7 week period by a team of 5 students.</p>
+        </div>
+        <div class="textArea">
+            <h2 id="work-title">My work</h2>
+            <p id="work-1">I helped coming up with the concept, drew the pigeons, professor, final boss, final level backgrounds and the poster.
+                Besides that I did a lot of the coding, such as the attack and health mechanics, pigeons movement, level lay-outs and the start- and end screens.
             </p>
         </div>
         <div class="textArea">
-            <h2>My work</h2>
-            <p>I helped coming up with the concept, drew the pigeons, professor, final boss, final level background and poster. <br>
-                Besides that I did a lot of the coding, like the attack and health mechanics, pigeons movement, the linking of all the rooms and the start- and end screens.
+            <h2 id="tech-title">Technology</h2>
+            <p id="tech-1">Everything is coded in TypeScript and HTML/CSS. Using regular TS wasn't the easiest way to build a webgame, but it worked and helped me learn TS.
+                All art assets are made with Adobe Photoshop.
             </p>
-        </div>
-        <div class="textArea">
-            <h2>Technology</h2>
-            <p>Everything is coded in 'vanilla' TypeScript and a bit of HTML/CSS. Using just regular TS probably wasn't the easiest way to build a webgame, but it worked. <br>
-                Art assets are made with Adobe Photoshop. <br>
-                <a href="https://github.com/NiekRottier/Project-Pigeon" target="_blank">GitHub</a> - 
-                <a href="https://niekrottier.github.io/Project-Pigeon/" target="_blank">Game</a>
-            </p>
+            <a href="https://github.com/NiekRottier/Project-Pigeon" target="_blank">GitHub</a>
+            <a href="https://niekrottier.github.io/Project-Pigeon/" target="_blank">Game</a>
         </div>
     </div>
 
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/projectPigeon/generator.png" alt="Generated keywords for the game" class="image">
@@ -77,5 +82,6 @@
     <script src="js/projectMenu.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/backButton.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

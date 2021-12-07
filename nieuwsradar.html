@@ -13,12 +13,16 @@
 </head>
 <body>
     <ul id="menu">
-        <li id="menuItem1"><a href="#header">Header</a></li>
-        <li id="menuItem2"><a href="#summary">Summary</a></li>
-        <li id="menuItem3"><a href="#gallery">Gallery</a></li>
+        <li id="menuItem1"><a id="link-header" href="#header">Header</a></li>
+        <li id="menuItem2"><a id="link-summary" href="#summary">Summary</a></li>
+        <li id="menuItem3"><a id="link-gallery" href="#gallery">Gallery</a></li>
     </ul>
 
     <div id="backButton">Home</div>
+
+    <div id="languagePicker">
+        <small id="lang-eng">English</small> <small>|</small> <small id="lang-nl">Nederlands</small>
+    </div>
 
     <div id="header">
         <img src="./assets/images/projects/nieuwsradar/headerImg.png">
@@ -30,36 +34,36 @@
 
     <div id="summary">
         <div class="textArea">
-            <h2>About</h2>
-            <p>NieuwsRadar is an regional news app which focuses on the proximity of regional news items. <br>
-                This is accomplished by placing news items on a map and showing them in a radius around the user. <br>
-                When a news item is clicked a pop-up will appear with a short summary and a link to the full article. <br>
-                The user can use filters to see relevant articles. <br>
-                To change their location and size of the radius the user must log in.
+            <h2 id="about-title">About</h2>
+            <p id="about-1">NieuwsRadar is an regional news app which focuses on the proximity of regional news items.
+                This is accomplished by showing news items on a map around the users position.
+                When a news item is clicked a pop-up will appear with a short summary and a link to the full article.
+                The user can set filters to see relevant articles.
+                Users can sign in to change their location and the size of the radius.
             </p>
         </div>
         <div class="textArea">
-            <h2>My work</h2>
-            <p>My role in the team was teamleader, designer and unofficial design lead. <br>
-                As teamleader I spent a lot of time making sure everyone was busy and we would reach our goals. <br>
-                As designer I designed the application and intergrated feedback from the users and dev team. <br>
-                As design lead I communicated with the dev team and recieved their feedback and anwsered their questions.
+            <h2 id="work-title">My work</h2>
+            <p id="work-1">My role in the team was teamleader, designer and unofficial design lead.
+                As teamleader I spent a lot of time making sure everyone was busy and we would reach our goals.
+                As designer I designed the application and intergrated feedback from the users and dev team.
+                As design lead I communicated with the dev team, recieved their feedback and anwsered their questions about the design.
             </p>
         </div>
         <div class="textArea">
-            <h2>Technology</h2>
-            <p>The app is a PWA. This means it can be build to the web and as a native app. <br>
-                It is coded with Angular and Ionic. Firebase wordt gebruikt als database voor de useraccounts. <br>
-                The design is made with Adobe XD. <br>
-                <a href="https://github.com/koen-benne/news-map" target="_blank">GitHub</a>
+            <h2 id="tech-title">Technology</h2>
+            <p id="tech-1">The app is a PWA. This means it can be build as a webapp and a native app.
+                It's coded using Angular and Ionic. We used Firebase to store the user accounts.
+                The design is made in Adobe XD.
             </p>
+            <a href="https://github.com/koen-benne/news-map" target="_blank">GitHub</a>
         </div>
     </div>
 
     <hr id="hrGallery"/>
 
     <div id="gallery">
-        <h2>Gallery</h2>
+        <h2 id="gallery-title">Gallery</h2>
         <div id="imageContainer">
             <p id="exitImage" hidden>x</p>
             <img src="./assets/images/projects/nieuwsradar/Map.png" alt="Map page wireframe" class="image">
@@ -78,5 +82,6 @@
     <script src="js/projectMenu.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/backButton.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>
