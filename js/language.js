@@ -4,6 +4,11 @@ let page = window.location.pathname
 // Remove the / and .html from the string
 page = page.substring(1, page.length-5)
 
+// If we're on the homescreen but the URL is just the base adress without '/index.html'
+if (page = "/") {
+    page = "index"
+}
+
 // Change language on button click
 document.getElementById('lang-eng')
     .addEventListener('click', () => {
