@@ -5,7 +5,7 @@ let page = window.location.pathname
 page = page.substring(1, page.length-5)
 
 // If we're on the homescreen but the URL is just the base adress without '/index.html'
-if (page = "/") {
+if (page === "/") {
     page = "index"
 }
 
@@ -50,7 +50,7 @@ const language = {
         index: {
             'about-title' : 'About me',
             'about-1' : 'Hi! I’m Niek, a 19 y/o Creative Media & Game Tech student at Hogeschool Rotterdam.',
-            'about-2' : 'I like to design and develop the front-end of websites. My goal is to give users the easiest and smoothest experience they’ve ever had.',
+            'about-2' : 'I like to develop and design (the front-end of) websites. My goal is to match the website with the users and make sure that the users can quickly and easily accomplish their goals.',
             'projects-title' : 'Projects',
             'contact-title' : 'Send me a message!',
             'contact-name' : 'Your name',
@@ -122,7 +122,7 @@ const language = {
         index: {
             'about-title' : 'Over mij',
             'about-1' : 'Hi! Ik ben Niek, een 19 jarige Creative Media & Game Tech student aan Hogeschool Rotterdam.',
-            'about-2' : 'Ik houd van het ontwerpen en ontwikkelen van de front-end van websites. Ik wil de gebruikers een zo makkelijk en soepel mogelijke ervaring geven.',
+            'about-2' : 'Ik hou van het ontwikkelen en ontwerpen van (de front-end van) websites. Mijn doel is dat mijn websites passen bij de doelgroep en dat de gebruikers snel en gemakkelijk hun doel kunnen bereiken.',
             'projects-title' : 'Projecten',
             'contact-title' : 'Stuur een bericht!',
             'contact-name' : 'Jouw naam',
