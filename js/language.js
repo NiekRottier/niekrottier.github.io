@@ -5,7 +5,7 @@ let page = window.location.pathname
 page = page.substring(1, page.length-5)
 
 // If we're on the homescreen but the URL is just the base adress without '/index.html'
-if (page = "/") {
+if (page === "/") {
     page = "index"
 }
 
