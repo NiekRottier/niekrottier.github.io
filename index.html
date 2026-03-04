@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niek Rottier - Creative Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/icon/TVfavicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <div id="lang-picker">
+        <button id="lang-eng" class="lang-btn">EN</button>
+        <button id="lang-nl" class="lang-btn">NL</button>
+    </div>
+    <script>document.getElementById('lang-' + (localStorage.getItem('lang') || 'eng'))?.classList.add('active');</script>
+
+    <section id="hero">
+        <img src="assets/images/heroImg.png" alt="" class="hero-bg">
+        <div class="hero-content">
+            <h1>Niek Rottier</h1>
+            <p class="subtitle">Creative Developer</p>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-visual">
+                <div class="profile-pic"></div>
+                <div class="socials">
+                    <a href="https://github.com/NiekRottier/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/niek-rottier-365805176/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 id="about-title">About me</h2>
+                <p id="about-1">I'm a creative front-end developer who brings calm, clarity and flexibility to every project. I enjoy working with interactive web technologies like React and Next.js to turn ideas into accessible, smooth interfaces. I pay close attention to detail and always keep the end user in mind.</p>
+                <p id="about-2">My goal is to use technology to create better experiences, whether that's an efficient workday, a fun evening or a seamless purchase. I'm always looking to learn new things and love collaborating with others to build something meaningful.</p>
+                <h3 id="skills-title">Skills</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label" id="skills-languages">Languages</span>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Sass</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-group-label" id="skills-frameworks">Frameworks</span>
+                    <div class="skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Laravel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-grid">
+            <a href="project.html?id=urbanJungle" class="project-card" style="background-image: url('assets/images/urbanJungle.png')">
+                <div class="project-overlay">
+                    <h3>Urban Jungle</h3>
+                    <span class="project-tags">TypeScript, React, Three.js, PWA</span>
+                </div>
+            </a>
+            <a href="project.html?id=jsai" class="project-card" style="background-image: url('assets/images/js-ai.png')">
+                <div class="project-overlay">
+                    <h3>JS and AI</h3>
+                    <span class="project-tags">JavaScript, AI, ML, TensorFlow.js</span>
+                </div>
+            </a>
+            <a href="project.html?id=nieuwsradar" class="project-card" style="background-image: url('assets/images/nieuwsradar.png')">
+                <div class="project-overlay">
+                    <h3>NieuwsRadar</h3>
+                    <span class="project-tags">Adobe XD, Angular, Ionic</span>
+                </div>
+            </a>
+            <a href="project.html?id=projectPigeon" class="project-card" style="background-image: url('assets/images/project-pigeon.png')">
+                <div class="project-overlay">
+                    <h3>Project: Pigeon</h3>
+                    <span class="project-tags">TypeScript, OOP</span>
+                </div>
+            </a>
+            <a href="project.html?id=reactNotes" class="project-card" style="background-image: url('assets/images/react-notes.png')">
+                <div class="project-overlay">
+                    <h3>React Notes</h3>
+                    <span class="project-tags">JavaScript, React, CRUD</span>
+                </div>
+            </a>
+            <a href="project.html?id=backendApi" class="project-card" style="background-image: url('assets/images/backend-api.png')">
+                <div class="project-overlay">
+                    <h3>Back-end API</h3>
+                    <span class="project-tags">Node.js, Express.js, Mongoose</span>
+                </div>
+            </a>
+            <a href="project.html?id=laravelGallery" class="project-card" style="background-image: url('assets/images/laravel-gallery.png')">
+                <div class="project-overlay">
+                    <h3>Laravel Gallery</h3>
+                    <span class="project-tags">PHP, Laravel, MVC</span>
+                </div>
+            </a>
+            <a href="project.html?id=decodeMe" class="project-card" style="background-image: url('assets/images/decodeMe.png')">
+                <div class="project-overlay">
+                    <h3>DecodeMe</h3>
+                    <span class="project-tags">React, Data Visualization</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 id="contact-heading">Contact</h2>
+        <div class="contact-card">
+            <h3 id="contact-title">Send me a message!</h3>
+            <form id="contact-form">
+                <input id="contactNumber" type="hidden" name="contact_number">
+                <label for="name" id="contact-name">Your name</label>
+                <input id="name" type="text" name="name" required>
+                <label for="email" id="contact-email">Your email address</label>
+                <input id="email" type="email" name="email" required>
+                <label for="message" id="contact-msg">Your message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" id="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/NiekRottier/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/niek-rottier-365805176/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <small>&copy; 2025 Niek Rottier</small>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

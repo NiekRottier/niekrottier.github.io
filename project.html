@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niek Rottier</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/icon/TVfavicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Home
+    </a>
+
+    <div id="lang-picker">
+        <button id="lang-eng" class="lang-btn">EN</button>
+        <button id="lang-nl" class="lang-btn">NL</button>
+    </div>
+    <script>document.getElementById('lang-' + (localStorage.getItem('lang') || 'eng'))?.classList.add('active');</script>
+
+    <section id="hero">
+        <img id="hero-img" src="" alt="" class="hero-bg">
+        <div class="hero-content">
+            <h1 id="project-title"></h1>
+            <p class="subtitle" id="project-subtitle"></p>
+        </div>
+    </section>
+
+    <div class="project-summary" id="summary"></div>
+
+    <div class="gallery" id="gallery-section">
+        <h2 id="gallery-title">Gallery</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="">
+    </div>
+
+    <footer>
+        <small>&copy; 2025 Niek Rottier</small>
+    </footer>
+
+    <script src="js/project.js"></script>
+</body>
+</html>
