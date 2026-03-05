@@ -1,4 +1,80 @@
 {
+    "tilburgsTales": {
+        "title": "Tilburg's Tales",
+        "subtitle": "React, Geolocation, Transmedia",
+        "heroImg": "assets/images/projects/tilburgsTales/heroImg.png",
+        "sections": {
+            "eng": [
+                { "id": "about", "title": "About", "texts": [
+                    "Tilburg's Tales is a transmedia experience made for tourists visiting Tilburg. Together with an international team during my minor at Fontys, we combined storytelling, design and tech to create something visitors could actually walk through and interact with.",
+                    "The webapp lets you follow chats between fictional characters, explore extra media and unlock new content as you move through the city. What you see depends on where you are and the choices you make, so everyone gets a slightly different experience. On top of that, we created Instagram accounts for the characters with their own posts and stories, tying the fictional world into a real social media presence. That cross-platform approach is what made it a true transmedia project."
+                ]},
+                { "id": "work", "title": "My work", "texts": [
+                    "I built the webapp. That meant creating the chat interface, hooking up the media content and making the geolocation system work so content would unlock as users moved around Tilburg. I was in charge of Cesar's route, so I designed and created his story and the path users would follow."
+                ]},
+                { "id": "tech", "title": "Technology", "texts": [
+                    "The app is built with React. It uses the Geolocation API to track the user's position and unlock content accordingly. The whole experience ties together fictional chats, media and location-based interaction into one transmedia story."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
+                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
+                ]}
+            ],
+            "nl": [
+                { "id": "about", "title": "Over", "texts": [
+                    "Tilburg's Tales is een transmedia ervaring gemaakt voor toeristen die Tilburg bezoeken. Samen met een internationaal team tijdens mijn minor bij Fontys combineerden we storytelling, design en technologie tot iets waar bezoekers doorheen konden lopen en mee konden interacteren.",
+                    "De webapp laat je chats volgen tussen fictionele karakters, extra media ontdekken en nieuwe content ontgrendelen terwijl je door de stad loopt. Wat je ziet hangt af van waar je bent en de keuzes die je maakt, dus iedereen krijgt een net iets andere ervaring. Daarnaast hebben we Instagram-accounts gemaakt voor de karakters met eigen posts en stories, waardoor de fictieve wereld ook op social media tot leven kwam. Die cross-platform aanpak is wat het een echt transmedia project maakte."
+                ]},
+                { "id": "work", "title": "Mijn bijdrage", "texts": [
+                    "Ik heb de webapp gebouwd. Dat betekende de chatinterface maken, de mediacontent koppelen en het geolocatiesysteem werkend krijgen zodat content werd ontgrendeld terwijl gebruikers door Tilburg liepen. Ik was verantwoordelijk voor de route van Cesar, dus ik heb zijn verhaal en het bijbehorende pad bedacht en uitgewerkt."
+                ]},
+                { "id": "tech", "title": "Technologie", "texts": [
+                    "De app is gebouwd met React. Het gebruikt de Geolocation API om de positie van de gebruiker te volgen en content te ontgrendelen. De hele ervaring koppelt fictionele chats, media en locatiegebonden interactie aan elkaar tot één transmedia verhaal."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
+                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
+                ]}
+            ]
+        },
+        "gallery": [
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttChat.png", "alt": "Character chat" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttExtras.png", "alt": "Character extras" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttInsta.png", "alt": "Character Instagram" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttUJO.png", "alt": "User Journey Overview" }
+        ]
+    },
+    "decodeMe": {
+        "title": "DecodeMe",
+        "subtitle": "React, Data Visualization",
+        "heroImg": "assets/images/projects/decodeMe/heroImg.png",
+        "sections": {
+            "eng": [
+                { "id": "about", "title": "About", "texts": [
+                    "Every company in Europe is required to share the data they have on you, thanks to the GDPR. The problem is that the response usually comes as a JSON file, which doesn't mean much to most people. DecodeMe solves this by letting you upload those files and turning them into clear, visual overviews. This way you can actually understand what's being stored about you and make informed decisions about your data."
+                ]},
+                { "id": "tech", "title": "Technology", "texts": [
+                    "The application is built with React.js. Routing is handled by react-router-dom. The app has two pages: a landing page and the decoder where users upload and visualize their data. It's hosted on Netlify."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/DecodeMe" },
+                    { "text": "App", "url": "https://decodeme.netlify.app/" }
+                ]}
+            ],
+            "nl": [
+                { "id": "about", "title": "Over", "texts": [
+                    "Elk bedrijf in Europa is verplicht om de data die ze van jou hebben te delen, dankzij de AVG. Het probleem is dat het antwoord meestal als JSON-bestand komt, wat voor de meeste mensen weinig betekent. DecodeMe lost dit op door je die bestanden te laten uploaden en ze om te zetten in duidelijke, visuele overzichten. Zo kun je daadwerkelijk begrijpen wat er over je wordt opgeslagen en weloverwogen keuzes maken over je gegevensbescherming."
+                ]},
+                { "id": "tech", "title": "Technologie", "texts": [
+                    "De applicatie is gebouwd met React.js. De routing wordt afgehandeld door react-router-dom. De app heeft twee pagina's: een landingspagina en de decoder waar gebruikers hun data kunnen uploaden en visualiseren. Het project wordt gehost op Netlify."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/DecodeMe" },
+                    { "text": "App", "url": "https://decodeme.netlify.app/" }
+                ]}
+            ]
+        },
+        "gallery": [
+            { "type": "img", "src": "assets/images/projects/decodeMe/decodeMeHome.png", "alt": "Home" },
+            { "type": "img", "src": "assets/images/projects/decodeMe/decodeMeResults.jpg", "alt": "Results" }
+        ]
+    },
     "urbanJungle": {
         "title": "Urban Jungle",
         "subtitle": "React, Three.js",
@@ -80,39 +156,68 @@
             { "type": "img", "src": "assets/images/projects/jsai/jsaiTree.png", "alt": "Decision tree" }
         ]
     },
-    "nieuwsradar": {
-        "title": "NieuwsRadar",
-        "subtitle": "Adobe XD, Angular, Ionic",
-        "heroImg": "assets/images/projects/nieuwsradar/heroImg.png",
+    "laravelGallery": {
+        "title": "Laravel Gallery",
+        "subtitle": "PHP, Laravel, MVC",
+        "heroImg": "assets/images/projects/laravelGallery/heroImg.png",
         "sections": {
             "eng": [
                 { "id": "about", "title": "About", "texts": [
-                    "NieuwsRadar is a regional news app which focuses on the proximity of regional news items. This is accomplished by showing news items on a map around the users position. When a news item is clicked a pop-up will appear with a short summary and a link to the full article. The user can set filters to see relevant articles. Users can sign in to change their location and the size of the radius."
-                ]},
-                { "id": "work", "title": "My work", "texts": [
-                    "My role in the team was team leader, designer and unofficial design lead. As team leader I spent a lot of time making sure everyone was busy and we would reach our goals. As designer I designed the application and integrated feedback from the users and dev team. As design lead I communicated with the dev team, received their feedback and answered their questions about the design."
+                    "With this web application you can login and look at and post pictures with a title, description and tag. Other functions include liking pictures, hiding, editing and deleting your own pictures, and searching based on the title or tag. At the moment there are 5 tags, but this could be expanded."
                 ]},
                 { "id": "tech", "title": "Technology", "texts": [
-                    "The app is a PWA. This means it can be built as a webapp and a native app. It's coded using Angular and Ionic. We used Firebase to store the user accounts. The design is made in Adobe XD."
+                    "The Laravel Gallery is, as the name suggests, built with the PHP framework Laravel. Laravel works with the MVC pattern, so this application also makes use of this. The application has a MySQL database."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Laravel-gallery" }
                 ]}
             ],
             "nl": [
                 { "id": "about", "title": "Over", "texts": [
-                    "NieuwsRadar is een regionale nieuwsapp die zich focust op de nabijheid van nieuws. Dit wordt gedaan door het nieuws op een kaart rond de gebruikers locatie te tonen. Wanneer er op een artikel geklikt wordt verschijnt er een pop-up met een kleine samenvatting en een link naar het volledige artikel. De gebruiker kan filters instellen om specifiek nieuws te vinden. Er kan worden ingelogd om je locatie en de nieuwsradius te veranderen."
-                ]},
-                { "id": "work", "title": "Mijn bijdrage", "texts": [
-                    "Mijn rol in dit team was teamleider, designer en onofficiële design lead. Als teamleider spendeerde ik tijd waarin ik zorgde dat iedereen werk had en onze doelen werden bereikt. Als designer hielp ik met het ontwerpen van de applicatie en integreerde ik feedback van de doelgroep en het dev team. Als design lead communiceerde ik met het dev team, ontving ik hun feedback en beantwoordde ik hun vragen over het ontwerp."
+                    "Op deze webapp kan je inloggen en afbeeldingen posten met een titel, beschrijving en een tag. Andere functies zijn het liken van afbeeldingen en het verbergen, aanpassen en verwijderen van je eigen afbeeldingen. Ook kan er gezocht worden op titel of tag. Op het moment zijn er 5 tags, maar dit kan uitgebreid worden."
                 ]},
                 { "id": "tech", "title": "Technologie", "texts": [
-                    "De app is een PWA. Dit betekent dat het als een webapp en als een native app gebouwd kan worden. Het is gecodeerd met Angular en Ionic. Firebase wordt gebruikt om de accounts op te slaan. Het ontwerp is gemaakt in Adobe XD."
+                    "De Laravel Gallery is, zoals de naam suggereert, gemaakt met het PHP framework Laravel. Laravel werkt met het MVC pattern, dus deze applicatie maakt daar ook gebruik van. De applicatie heeft een MySQL database."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Laravel-gallery" }
                 ]}
             ]
         },
         "gallery": [
-            { "type": "img", "src": "assets/images/projects/nieuwsradar/Map.png", "alt": "Map view" },
-            { "type": "img", "src": "assets/images/projects/nieuwsradar/Artikel.png", "alt": "Article view" },
-            { "type": "img", "src": "assets/images/projects/nieuwsradar/Account.png", "alt": "Account page" },
-            { "type": "img", "src": "assets/images/projects/nieuwsradar/lofiWireframe.jpeg", "alt": "Lo-fi wireframe" }
+            { "type": "img", "src": "assets/images/projects/laravelGallery/CreatePost.png", "alt": "Create post" },
+            { "type": "img", "src": "assets/images/projects/laravelGallery/Post.png", "alt": "Post view" },
+            { "type": "img", "src": "assets/images/projects/laravelGallery/Profile.png", "alt": "Profile" }
+        ]
+    },
+    "backendApi": {
+        "title": "Back-end API",
+        "subtitle": "Node.js, Express, Mongoose",
+        "heroImg": "assets/images/projects/backendApi/heroImg.png",
+        "sections": {
+            "eng": [
+                { "id": "about", "title": "About", "texts": [
+                    "This API is built for storing data of animals. You add their name, age, diet and which animal they are.",
+                    "Creating this gave me insight in the workings of APIs and taught me about HTTP requests. The API also has pagination for ease of use."
+                ]},
+                { "id": "tech", "title": "Technology", "texts": [
+                    "This backend API was made using Node.js, Express and Mongoose. It only accepts strings as input because that was a requirement from school, which was a bit weird, but sure."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Animals-API" }
+                ]}
+            ],
+            "nl": [
+                { "id": "about", "title": "Over", "texts": [
+                    "Deze API is gebouwd om dieren in op te slaan. Je kan hun naam, leeftijd, dieet en soort toevoegen.",
+                    "Het maken hiervan gaf mij inzicht in de werking van API's en HTTP requests. De API heeft ook een pagination om het compleet te maken."
+                ]},
+                { "id": "tech", "title": "Technologie", "texts": [
+                    "Deze backend API is gemaakt met Node.js, Express en Mongoose. Het accepteert alleen Strings als input, omdat dit een eis van school was. Dat is een beetje apart, maar goed."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Animals-API" }
+                ]}
+            ]
+        },
+        "gallery": [
+            { "type": "img", "src": "assets/images/projects/backendApi/backend-api-code.png", "alt": "API code" }
         ]
     },
     "projectPigeon": {
@@ -162,6 +267,41 @@
             { "type": "img", "src": "assets/images/projects/projectPigeon/deadscreen.png", "alt": "Dead screen" }
         ]
     },
+    "nieuwsradar": {
+        "title": "NieuwsRadar",
+        "subtitle": "Adobe XD, Angular, Ionic",
+        "heroImg": "assets/images/projects/nieuwsradar/heroImg.png",
+        "sections": {
+            "eng": [
+                { "id": "about", "title": "About", "texts": [
+                    "NieuwsRadar is a regional news app which focuses on the proximity of regional news items. This is accomplished by showing news items on a map around the users position. When a news item is clicked a pop-up will appear with a short summary and a link to the full article. The user can set filters to see relevant articles. Users can sign in to change their location and the size of the radius."
+                ]},
+                { "id": "work", "title": "My work", "texts": [
+                    "My role in the team was team leader, designer and unofficial design lead. As team leader I spent a lot of time making sure everyone was busy and we would reach our goals. As designer I designed the application and integrated feedback from the users and dev team. As design lead I communicated with the dev team, received their feedback and answered their questions about the design."
+                ]},
+                { "id": "tech", "title": "Technology", "texts": [
+                    "The app is a PWA. This means it can be built as a webapp and a native app. It's coded using Angular and Ionic. We used Firebase to store the user accounts. The design is made in Adobe XD."
+                ]}
+            ],
+            "nl": [
+                { "id": "about", "title": "Over", "texts": [
+                    "NieuwsRadar is een regionale nieuwsapp die zich focust op de nabijheid van nieuws. Dit wordt gedaan door het nieuws op een kaart rond de gebruikers locatie te tonen. Wanneer er op een artikel geklikt wordt verschijnt er een pop-up met een kleine samenvatting en een link naar het volledige artikel. De gebruiker kan filters instellen om specifiek nieuws te vinden. Er kan worden ingelogd om je locatie en de nieuwsradius te veranderen."
+                ]},
+                { "id": "work", "title": "Mijn bijdrage", "texts": [
+                    "Mijn rol in dit team was teamleider, designer en onofficiële design lead. Als teamleider spendeerde ik tijd waarin ik zorgde dat iedereen werk had en onze doelen werden bereikt. Als designer hielp ik met het ontwerpen van de applicatie en integreerde ik feedback van de doelgroep en het dev team. Als design lead communiceerde ik met het dev team, ontving ik hun feedback en beantwoordde ik hun vragen over het ontwerp."
+                ]},
+                { "id": "tech", "title": "Technologie", "texts": [
+                    "De app is een PWA. Dit betekent dat het als een webapp en als een native app gebouwd kan worden. Het is gecodeerd met Angular en Ionic. Firebase wordt gebruikt om de accounts op te slaan. Het ontwerp is gemaakt in Adobe XD."
+                ]}
+            ]
+        },
+        "gallery": [
+            { "type": "img", "src": "assets/images/projects/nieuwsradar/Map.png", "alt": "Map view" },
+            { "type": "img", "src": "assets/images/projects/nieuwsradar/Artikel.png", "alt": "Article view" },
+            { "type": "img", "src": "assets/images/projects/nieuwsradar/Account.png", "alt": "Account page" },
+            { "type": "img", "src": "assets/images/projects/nieuwsradar/lofiWireframe.jpeg", "alt": "Lo-fi wireframe" }
+        ]
+    },
     "reactNotes": {
         "title": "React Notes",
         "subtitle": "JavaScript, React",
@@ -189,145 +329,5 @@
             ]
         },
         "gallery": []
-    },
-    "backendApi": {
-        "title": "Back-end API",
-        "subtitle": "Node.js, Express, Mongoose",
-        "heroImg": "assets/images/projects/backendApi/heroImg.png",
-        "sections": {
-            "eng": [
-                { "id": "about", "title": "About", "texts": [
-                    "This API is built for storing data of animals. You add their name, age, diet and which animal they are.",
-                    "Creating this gave me insight in the workings of APIs and taught me about HTTP requests. The API also has pagination for ease of use."
-                ]},
-                { "id": "tech", "title": "Technology", "texts": [
-                    "This backend API was made using Node.js, Express and Mongoose. It only accepts strings as input because that was a requirement from school, which was a bit weird, but sure."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Animals-API" }
-                ]}
-            ],
-            "nl": [
-                { "id": "about", "title": "Over", "texts": [
-                    "Deze API is gebouwd om dieren in op te slaan. Je kan hun naam, leeftijd, dieet en soort toevoegen.",
-                    "Het maken hiervan gaf mij inzicht in de werking van API's en HTTP requests. De API heeft ook een pagination om het compleet te maken."
-                ]},
-                { "id": "tech", "title": "Technologie", "texts": [
-                    "Deze backend API is gemaakt met Node.js, Express en Mongoose. Het accepteert alleen Strings als input, omdat dit een eis van school was. Dat is een beetje apart, maar goed."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Animals-API" }
-                ]}
-            ]
-        },
-        "gallery": [
-            { "type": "img", "src": "assets/images/projects/backendApi/backend-api-code.png", "alt": "API code" }
-        ]
-    },
-    "laravelGallery": {
-        "title": "Laravel Gallery",
-        "subtitle": "PHP, Laravel, MVC",
-        "heroImg": "assets/images/projects/laravelGallery/heroImg.png",
-        "sections": {
-            "eng": [
-                { "id": "about", "title": "About", "texts": [
-                    "With this web application you can login and look at and post pictures with a title, description and tag. Other functions include liking pictures, hiding, editing and deleting your own pictures, and searching based on the title or tag. At the moment there are 5 tags, but this could be expanded."
-                ]},
-                { "id": "tech", "title": "Technology", "texts": [
-                    "The Laravel Gallery is, as the name suggests, built with the PHP framework Laravel. Laravel works with the MVC pattern, so this application also makes use of this. The application has a MySQL database."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Laravel-gallery" }
-                ]}
-            ],
-            "nl": [
-                { "id": "about", "title": "Over", "texts": [
-                    "Op deze webapp kan je inloggen en afbeeldingen posten met een titel, beschrijving en een tag. Andere functies zijn het liken van afbeeldingen en het verbergen, aanpassen en verwijderen van je eigen afbeeldingen. Ook kan er gezocht worden op titel of tag. Op het moment zijn er 5 tags, maar dit kan uitgebreid worden."
-                ]},
-                { "id": "tech", "title": "Technologie", "texts": [
-                    "De Laravel Gallery is, zoals de naam suggereert, gemaakt met het PHP framework Laravel. Laravel werkt met het MVC pattern, dus deze applicatie maakt daar ook gebruik van. De applicatie heeft een MySQL database."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/Laravel-gallery" }
-                ]}
-            ]
-        },
-        "gallery": [
-            { "type": "img", "src": "assets/images/projects/laravelGallery/CreatePost.png", "alt": "Create post" },
-            { "type": "img", "src": "assets/images/projects/laravelGallery/Post.png", "alt": "Post view" },
-            { "type": "img", "src": "assets/images/projects/laravelGallery/Profile.png", "alt": "Profile" }
-        ]
-    },
-    "tilburgsTales": {
-        "title": "Tilburg's Tales",
-        "subtitle": "React, Geolocation, Transmedia",
-        "heroImg": "assets/images/projects/tilburgsTales/heroImg.png",
-        "sections": {
-            "eng": [
-                { "id": "about", "title": "About", "texts": [
-                    "Tilburg's Tales is a transmedia experience made for tourists visiting Tilburg. Together with an international team during my minor at Fontys, we combined storytelling, design and tech to create something visitors could actually walk through and interact with.",
-                    "The webapp lets you follow chats between fictional characters, explore extra media and unlock new content as you move through the city. What you see depends on where you are and the choices you make, so everyone gets a slightly different experience. On top of that, we created Instagram accounts for the characters with their own posts and stories, tying the fictional world into a real social media presence. That cross-platform approach is what made it a true transmedia project."
-                ]},
-                { "id": "work", "title": "My work", "texts": [
-                    "I built the webapp. That meant creating the chat interface, hooking up the media content and making the geolocation system work so content would unlock as users moved around Tilburg. I was in charge of Cesar's route, so I designed and created his story and the path users would follow."
-                ]},
-                { "id": "tech", "title": "Technology", "texts": [
-                    "The app is built with React. It uses the Geolocation API to track the user's position and unlock content accordingly. The whole experience ties together fictional chats, media and location-based interaction into one transmedia story."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
-                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
-                ]}
-            ],
-            "nl": [
-                { "id": "about", "title": "Over", "texts": [
-                    "Tilburg's Tales is een transmedia ervaring gemaakt voor toeristen die Tilburg bezoeken. Samen met een internationaal team tijdens mijn minor bij Fontys combineerden we storytelling, design en technologie tot iets waar bezoekers doorheen konden lopen en mee konden interacteren.",
-                    "De webapp laat je chats volgen tussen fictionele karakters, extra media ontdekken en nieuwe content ontgrendelen terwijl je door de stad loopt. Wat je ziet hangt af van waar je bent en de keuzes die je maakt, dus iedereen krijgt een net iets andere ervaring. Daarnaast hebben we Instagram-accounts gemaakt voor de karakters met eigen posts en stories, waardoor de fictieve wereld ook op social media tot leven kwam. Die cross-platform aanpak is wat het een echt transmedia project maakte."
-                ]},
-                { "id": "work", "title": "Mijn bijdrage", "texts": [
-                    "Ik heb de webapp gebouwd. Dat betekende de chatinterface maken, de mediacontent koppelen en het geolocatiesysteem werkend krijgen zodat content werd ontgrendeld terwijl gebruikers door Tilburg liepen. Ik was verantwoordelijk voor de route van Cesar, dus ik heb zijn verhaal en het bijbehorende pad bedacht en uitgewerkt."
-                ]},
-                { "id": "tech", "title": "Technologie", "texts": [
-                    "De app is gebouwd met React. Het gebruikt de Geolocation API om de positie van de gebruiker te volgen en content te ontgrendelen. De hele ervaring koppelt fictionele chats, media en locatiegebonden interactie aan elkaar tot één transmedia verhaal."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
-                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
-                ]}
-            ]
-        },
-        "gallery": [
-            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttChat.png", "alt": "Character chat" },
-            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttExtras.png", "alt": "Character extras" },
-            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttInsta.png", "alt": "Character Instagram" },
-            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttUJO.png", "alt": "User Journey Overview" }
-        ]
-    },
-    "decodeMe": {
-        "title": "DecodeMe",
-        "subtitle": "React, Data Visualization",
-        "heroImg": "assets/images/projects/decodeMe/heroImg.png",
-        "sections": {
-            "eng": [
-                { "id": "about", "title": "About", "texts": [
-                    "Every company in Europe is required to share the data they have on you, thanks to the GDPR. The problem is that the response usually comes as a JSON file, which doesn't mean much to most people. DecodeMe solves this by letting you upload those files and turning them into clear, visual overviews. This way you can actually understand what's being stored about you and make informed decisions about your data."
-                ]},
-                { "id": "tech", "title": "Technology", "texts": [
-                    "The application is built with React.js. Routing is handled by react-router-dom. The app has two pages: a landing page and the decoder where users upload and visualize their data. It's hosted on Netlify."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/DecodeMe" },
-                    { "text": "App", "url": "https://decodeme.netlify.app/" }
-                ]}
-            ],
-            "nl": [
-                { "id": "about", "title": "Over", "texts": [
-                    "Elk bedrijf in Europa is verplicht om de data die ze van jou hebben te delen, dankzij de AVG. Het probleem is dat het antwoord meestal als JSON-bestand komt, wat voor de meeste mensen weinig betekent. DecodeMe lost dit op door je die bestanden te laten uploaden en ze om te zetten in duidelijke, visuele overzichten. Zo kun je daadwerkelijk begrijpen wat er over je wordt opgeslagen en weloverwogen keuzes maken over je gegevensbescherming."
-                ]},
-                { "id": "tech", "title": "Technologie", "texts": [
-                    "De applicatie is gebouwd met React.js. De routing wordt afgehandeld door react-router-dom. De app heeft twee pagina's: een landingspagina en de decoder waar gebruikers hun data kunnen uploaden en visualiseren. Het project wordt gehost op Netlify."
-                ], "links": [
-                    { "text": "GitHub", "url": "https://github.com/NiekRottier/DecodeMe" },
-                    { "text": "App", "url": "https://decodeme.netlify.app/" }
-                ]}
-            ]
-        },
-        "gallery": [
-            { "type": "img", "src": "assets/images/projects/decodeMe/decodeMeHome.png", "alt": "Home" },
-            { "type": "img", "src": "assets/images/projects/decodeMe/decodeMeResults.jpg", "alt": "Results" }
-        ]
     }
 }
