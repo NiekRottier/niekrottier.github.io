@@ -254,6 +254,49 @@
             { "type": "img", "src": "assets/images/projects/laravelGallery/Profile.png", "alt": "Profile" }
         ]
     },
+    "tilburgsTales": {
+        "title": "Tilburg's Tales",
+        "subtitle": "React, Geolocation, Transmedia",
+        "heroImg": "assets/images/projects/tilburgsTales/heroImg.png",
+        "sections": {
+            "eng": [
+                { "id": "about", "title": "About", "texts": [
+                    "Tilburg's Tales is a transmedia experience made for tourists visiting Tilburg. Together with an international team during my minor at Fontys, we combined storytelling, design and tech to create something visitors could actually walk through and interact with.",
+                    "The webapp lets you follow chats between fictional characters, explore extra media and unlock new content as you move through the city. What you see depends on where you are and the choices you make, so everyone gets a slightly different experience. On top of that, we created Instagram accounts for the characters with their own posts and stories, tying the fictional world into a real social media presence. That cross-platform approach is what made it a true transmedia project."
+                ]},
+                { "id": "work", "title": "My work", "texts": [
+                    "I built the webapp. That meant creating the chat interface, hooking up the media content and making the geolocation system work so content would unlock as users moved around Tilburg. I was in charge of Cesar's route, so I designed and created his story and the path users would follow."
+                ]},
+                { "id": "tech", "title": "Technology", "texts": [
+                    "The app is built with React. It uses the Geolocation API to track the user's position and unlock content accordingly. The whole experience ties together fictional chats, media and location-based interaction into one transmedia story."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
+                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
+                ]}
+            ],
+            "nl": [
+                { "id": "about", "title": "Over", "texts": [
+                    "Tilburg's Tales is een transmedia ervaring gemaakt voor toeristen die Tilburg bezoeken. Samen met een internationaal team tijdens mijn minor bij Fontys combineerden we storytelling, design en technologie tot iets waar bezoekers doorheen konden lopen en mee konden interacteren.",
+                    "De webapp laat je chats volgen tussen fictionele karakters, extra media ontdekken en nieuwe content ontgrendelen terwijl je door de stad loopt. Wat je ziet hangt af van waar je bent en de keuzes die je maakt, dus iedereen krijgt een net iets andere ervaring. Daarnaast hebben we Instagram-accounts gemaakt voor de karakters met eigen posts en stories, waardoor de fictieve wereld ook op social media tot leven kwam. Die cross-platform aanpak is wat het een echt transmedia project maakte."
+                ]},
+                { "id": "work", "title": "Mijn bijdrage", "texts": [
+                    "Ik heb de webapp gebouwd. Dat betekende de chatinterface maken, de mediacontent koppelen en het geolocatiesysteem werkend krijgen zodat content werd ontgrendeld terwijl gebruikers door Tilburg liepen. Ik was verantwoordelijk voor de route van Cesar, dus ik heb zijn verhaal en het bijbehorende pad bedacht en uitgewerkt."
+                ]},
+                { "id": "tech", "title": "Technologie", "texts": [
+                    "De app is gebouwd met React. Het gebruikt de Geolocation API om de positie van de gebruiker te volgen en content te ontgrendelen. De hele ervaring koppelt fictionele chats, media en locatiegebonden interactie aan elkaar tot één transmedia verhaal."
+                ], "links": [
+                    { "text": "GitHub", "url": "https://github.com/NiekRottier/tilburgs-tales" },
+                    { "text": "App", "url": "https://tilburgtales.netlify.app/" }
+                ]}
+            ]
+        },
+        "gallery": [
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttChat.png", "alt": "Character chat" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttExtras.png", "alt": "Character extras" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttInsta.png", "alt": "Character Instagram" },
+            { "type": "img", "src": "assets/images/projects/tilburgsTales/ttUJO.png", "alt": "User Journey Overview" }
+        ]
+    },
     "decodeMe": {
         "title": "DecodeMe",
         "subtitle": "React, Data Visualization",
