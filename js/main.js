@@ -164,4 +164,4 @@ document.getElementById('lang-eng')?.addEventListener('click', () => setLanguage
 document.getElementById('lang-nl')?.addEventListener('click', () => setLanguage('nl'));
 
 // Initialize language
-setLanguage(localStorage.getItem('lang') || 'eng');
+setLanguage(localStorage.getItem('lang') || 'nl');
